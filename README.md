@@ -1,4 +1,4 @@
-# 🧠 MiniGPT — GPT from Scratch
+# MiniGPT — GPT from Scratch
 
 <div align="center">
 
@@ -6,7 +6,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
-**Implementasi GPT-style Transformer dari nol menggunakan PyTorch murni. Dilatih pada dataset WikiText-2 dengan GPT-2 tokenizer.**
+**Implementasi GPT-style Transformer menggunakan PyTorch murni. Dilatih pada dataset WikiText-2 dengan GPT-2 tokenizer.**
 
 [Arsitektur](#arsitektur) · [Instalasi](#instalasi) · [Training](#training) · [Inferensi](#inferensi)
 
@@ -14,19 +14,19 @@
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-- 🏗 **Transformer dari nol** — tidak menggunakan library high-level
-- 🔥 **Multi-Head Causal Self-Attention** dengan causal mask
-- ⚡ **Gradient Accumulation** — efisien untuk GPU VRAM terbatas
-- 📉 **Cosine Annealing LR Scheduler**
-- 💾 **Checkpoint system** — save best model & resume training
-- 📊 **Perplexity tracking** di setiap epoch
-- 🌐 **Inferensi Bahasa Indonesia** via auto-translate
+- **Transformer dari nol** — tidak menggunakan library high-level
+- **Multi-Head Causal Self-Attention** dengan causal mask
+- **Gradient Accumulation** — efisien untuk GPU VRAM terbatas
+- **Cosine Annealing LR Scheduler**
+- **Checkpoint system** — save best model & resume training
+- **Perplexity tracking** di setiap epoch
+- **Inferensi Bahasa Indonesia** via auto-translate
 
 ---
 
-## 🗂 Struktur Proyek
+## Struktur Proyek
 
 ```
 minigpt-from-scratch/
@@ -57,7 +57,7 @@ minigpt-from-scratch/
 
 ---
 
-## 🏗 Arsitektur
+## Arsitektur
 
 ```
 Input Tokens (seq_len)
@@ -101,7 +101,7 @@ Positional Embedding [max_len=512, dim=128]
 
 ---
 
-## ⚙️ Instalasi
+## Instalasi
 
 ```bash
 # Clone repo
@@ -118,7 +118,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Training
+## Training
 
 ```bash
 # Step 1: Download & tokenisasi dataset WikiText-2
@@ -160,7 +160,7 @@ python train.py --resume checkpoints/best_model.pt
 
 ---
 
-## 💬 Inferensi
+## Inferensi
 
 ```bash
 # Generate teks Bahasa Inggris
@@ -172,7 +172,7 @@ python generate.py --prompt "kecerdasan buatan adalah" --lang id --max_tokens 50
 
 ---
 
-## 📊 Evaluasi
+## Evaluasi
 
 ```bash
 python evaluate.py
@@ -183,7 +183,7 @@ python evaluate.py
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 torch>=2.0.0
@@ -195,12 +195,12 @@ numpy>=1.24.0
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 MIT License — lihat [LICENSE](LICENSE)
 
 ---
 
 <div align="center">
-Made with ❤️ by <a href="https://github.com/MuhammadSamman">Muhammad Samman</a>
+Made with by <a href="https://github.com/MuhammadSamman">Muhammad Samman</a>
 </div>
